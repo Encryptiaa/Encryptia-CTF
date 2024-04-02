@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <header>
+    <h1>Login</h1>  <a href=# type="text" id="flag" value="ecryptia-ctf{bkwitv87ybKSow@7WYNF3rt}" class="hidden"></a>
+  </header>
+
+  <section>
+    <form id="login-form">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 My Homepage. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Disable right-click context menu
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    // Prevent access to developer tools
+    document.onkeydown = function(e) {
+      if (
+        (e.ctrlKey && 
+          (e.keyCode === 85 || // 'U' key
+          e.keyCode === 83)) // 'S' key
+        ||
+        (e.keyCode === 123) // F12 key
+      ) {
+        return false;
+      }
+    };
+  </script>
+</body>
+</html>
