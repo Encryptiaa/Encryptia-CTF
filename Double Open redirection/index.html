@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Admin</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Index Page</h1>
+  </header>
+
+  <section>
+    <h2>Welcome to the index page</h2>
+    <p>Click the button below to Verify_account </p>
+    <button id="redirect-btn">Verification </button>
+  </section>
+
+  <footer>
+    <p>© 2024 My Website. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Set the default value of redirected to true if it's not already set
+    if (localStorage.getItem('redirected') === null) {
+      localStorage.setItem('redirected', 'true');
+    }
+
+    document.getElementById('redirect-btn').addEventListener('click', function() {
+      var redirected = localStorage.getItem('redirected');
+      if (redirected === 'true') {
+        window.location.href = 'test.html?redirected=true';
+      } else {
+        window.location.href = 'admin.html?redirected=false';
+      }
+    });
+  </script>
+</body>
+</html>
