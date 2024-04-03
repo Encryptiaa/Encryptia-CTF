@@ -6,7 +6,7 @@ Are you ready to embark on this thrilling journey of discovery and mastery? Join
 
 📂 Path Traversal **https://encryptiaa.github.io/Encryptia-CTF/Path%20Traversal/**
 
-📂📂 Path Traversal
+📂📂 Path Traversal **https://encryptiaa.github.io/Encryptia-CTF/Back%20Traversal/Main/Web/**
 
 📄 Logged me In **https://encryptiaa.github.io/Encryptia-CTF/Logged%20me%20In/**
 
