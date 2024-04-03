@@ -11,3 +11,5 @@ Are you ready to embark on this thrilling journey of discovery and mastery? Join
 😎 Inspect0r **https://encryptiaa.github.io/Encryptia-CTF/Inspector/**
 
 🔄 Break me Brute **https://encryptiaa.github.io/Encryptia-CTF/Break%20me%20Brute/**
+
+❌ Reflected XSS **https://encryptiaa.github.io/Encryptia-CTF/rxss/**
