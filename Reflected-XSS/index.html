@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XSS Vulnerable Page</title>
+</head>
+<body>
+  <header>
+    <h1>XSS Vulnerable Page</h1>
+  </header>
+
+  <section>
+    <h2>Search Results</h2>
+    <p>Search for something:</p>
+    <form id="search-form">
+      <input type="text" id="search-query" name="query" placeholder="Enter search query...">
+      <button type="submit">Search</button>
+    </form>
+
+    <div id="search-results"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Function to execute search
+    function search() {
+      const query = document.getElementById('search-query').value;
+      const resultsContainer = document.getElementById('search-results');
+
+      // Clear previous search results
+      resultsContainer.innerHTML = '';
+
+      // Display search query (vulnerable to XSS)
+      resultsContainer.innerHTML = '<p>Search results for: ' + query + '</p>';
+    }
+
+    // Attach event listener to search form
+    document.getElementById('search-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      search();
+    });
+  </script>
+</body>
+</html>
