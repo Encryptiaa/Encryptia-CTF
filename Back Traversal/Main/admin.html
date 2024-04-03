@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Admin</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard</h1>
+  </header>
+
+  <section>
+    <h2>Welcome to Admin Dashboard</h2>
+    <p class="hidden">c8ecw7tox8oaW}</p>
+  </section>
+
+  <footer>
+    <p>© 2024 My Website. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Set the default value of redirected to true if it's not already set
+    if (localStorage.getItem('redirected') === null) {
+      localStorage.setItem('redirected', 'true');
+    }
+
+    // Check if redirected is false, if so, redirect back to index page
+    var redirected = localStorage.getItem('redirected');
+    if (redirected !== 'false' && window.location.search.includes('redirected=false')) {
+      // If redirected is not false and redirected=false is manually set in the URL,
+      // allow access to the admin page
+      localStorage.setItem('redirected', 'false');
+    } else if (redirected !== 'false') {
+      alert('Unauthorized access: You are not authorized to directly access the admin page.');
+      // Redirect the user back to the index page or any other appropriate action
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>
