@@ -18,7 +18,7 @@ Are you ready to embark on this thrilling journey of discovery and mastery? Join
 
 ❌ ❌ Reflected XSS **https://encryptiaa.github.io/Encryptia-CTF/rxss/**
 
-🎯 Open Redirection ****
+🎯 Open Redirection **https://encryptiaa.github.io/Encryptia-CTF/Open%20redirection/**
 
 🎯🎯 Open Redirection ****
 
