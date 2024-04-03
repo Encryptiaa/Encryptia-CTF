@@ -20,5 +20,5 @@ Are you ready to embark on this thrilling journey of discovery and mastery? Join
 
 🎯 Open Redirection **https://encryptiaa.github.io/Encryptia-CTF/Open%20redirection/**
 
-🎯🎯 Open Redirection ****
+🎯🎯 Open Redirection **https://encryptiaa.github.io/Encryptia-CTF/Double%20Open%20redirection/**
 
