@@ -13,3 +13,7 @@ Are you ready to embark on this thrilling journey of discovery and mastery? Join
 🔄 Break me Brute **https://encryptiaa.github.io/Encryptia-CTF/Break%20me%20Brute/**
 
 ❌ Reflected XSS **https://encryptiaa.github.io/Encryptia-CTF/rxss/**
+
+❌ ❌ Reflected XSS ****
+
+🎯 Open Redirection ****
